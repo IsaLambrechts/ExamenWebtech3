@@ -17,14 +17,15 @@ public class RegistratieResource extends ServerResource {
 	@Get("xml")
 	public String getAlleRegistraties(){
 		try {
+			String output = "<bestellingen>\n <klanten>";
 			BufferedReader in = new BufferedReader(new FileReader("registratie.xml"));
 			String line;
-			String output = "";
 			while((line = in.readLine()) != null)
 			{
 			    output += line + "\n";
 			}
 			in.close();
+			output += " </klanten>\n</bestellingen>";
 			return output;
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -36,7 +37,7 @@ public class RegistratieResource extends ServerResource {
 
 	}
 	
-	@Post("xml")
+	@Post
 	public void newRegistratie(String registratie){
 		
 		try (FileWriter fw = new FileWriter("registratie.xml", true);

@@ -17,5 +17,18 @@ public class Registratie {
 		this.hoeveelheid = hoeveelheid;
 		
 	}
+	
+	@Override
+	public String toString() {
+		String uitvoer = "";
+		
+		uitvoer = "\n  <klant klantnaam=\"" + naam + "\"";
+		uitvoer += " adres=\"" + adres + "\"";
+		uitvoer += " besteldatum=\"" + datum + "\"";
+		uitvoer += " productnaam=\"" + productnaam + "\"";
+		uitvoer += " hoeveelheid=\"" + hoeveelheid + "\"/>";
+		
+		return uitvoer;
+	}
 
 }

@@ -1,13 +1,4 @@
-<race name="Antwerp Marathon" date="11/08/2016" distance="42" id="9">
- <uri>race/9</uri>
- <description>De Antwerpse marathon</description>
- <runners>
-  <runner first_name="Bart" last_name="De Wever" age="47" id="21">
-   <uri>/race/9/runner/21</uri>
-  </runner>
-  <runner first_name="Andrew" last_name="Glover" age="22" id="20">
-   <uri>/race/9/runner/20</uri>
-  </runner>
- </runners>
-</race>
 
+  <klant klantnaam="Isa Lambrechts" adres="Meistraat 3, 2000 Antwerpen" besteldatum="02/08/2017" productnaam="Laptop Acer" hoeveelheid="1"/>
+
+  <klant klantnaam="Maddy" adres="Sportpleinstraat 30, 9130 Kieldrecht" besteldatum="03/09/2017" productnaam="kattenmelk" hoeveelheid="2"/>
