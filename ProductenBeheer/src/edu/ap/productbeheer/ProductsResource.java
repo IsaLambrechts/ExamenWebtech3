@@ -2,6 +2,7 @@ package edu.ap.productbeheer;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -34,8 +35,24 @@ public class ProductsResource extends ServerResource {
 	}
 	
 	@Post
-	public void postProduct(){
+	public void postProduct(Product product) throws IOException{
 		
+		// Create a new JSONObject
+        JSONObject jsonObject = new JSONObject();
+
+        // Add the values to the jsonObject
+        jsonObject.put("naam", product.getNaam());
+        jsonObject.put("producent", product.getProducent());
+        jsonObject.put("prijs", product.getPrijs());
+
+        // Create a new FileWriter object
+        FileWriter fileWriter = new FileWriter("C:\\Users\\CaruCath\\Documents\\GitHub\\ExamenWebtech3\\ProductenBeheer\\product.json");
+
+        // Writting the jsonObject into sample.json
+        fileWriter.write(jsonObject.toJSONString());
+        fileWriter.close();
+
+        System.out.println("JSON Object Successfully written to the file!!");
 	}
 
 }

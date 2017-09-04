@@ -1,0 +1,10 @@
+3/ Beschrijf in je eigen woorden wat een web service is (2 punten). 
+Een webservice is een service dat aangeboden wordt waardoor je je applicatie kan laten runnen op het world wide web.
+De webservice gaat in de achtergrond aan de gang zodat je applicatie blijft runnen.
+
+
+
+
+Leg ook uit wat het verband is met Service Oriented Architecture (1 punt).
+Dit is een soort van software design waar webservices een onderdeel van uitmaken.
+Dit is een collectie van services.
